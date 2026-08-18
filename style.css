@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(135deg, #1a1a1a, #2c3e50);
@@ -15,6 +15,7 @@ body {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
 }
 
 .time {
@@ -35,6 +36,58 @@ body {
 span {
     padding: 0 10px;
     display: inline-block;
+}
+
+.comments-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.comments {
+    margin-bottom: 1rem;
+    min-height: 100px;
+    overflow-y: auto;
+}
+
+.comment {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#commentInput {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
 }
 
 @media (max-width: 600px) {
